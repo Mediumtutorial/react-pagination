@@ -22,7 +22,6 @@ export default class App extends Component {
             .then(res => {
 
                 const data = res.data;
-                const count = data.length
                 const slice = data.slice(this.state.offset, this.state.offset + this.state.perPage)
                 const postData = slice.map(pd => <React.Fragment>
                     <p>{pd.title}</p>
