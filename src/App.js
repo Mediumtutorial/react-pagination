@@ -30,7 +30,7 @@ export default class App extends Component {
 
                 this.setState({
                     pageCount: Math.ceil(data.length / this.state.perPage),
-                    count,
+                   
                     postData
                 })
             });
